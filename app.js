@@ -47,6 +47,12 @@ app.get('/about', (req, res) => {
   })
 })
 
+app.get('/movies', (req, res) => {
+  res.render('pages/movies', {
+      user
+  })
+})
+
 app.get('/articles', (req, res) => {
   res.render('pages/articles', {
       articles: posts
