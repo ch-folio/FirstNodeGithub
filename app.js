@@ -49,7 +49,7 @@ app.get('/about', (req, res) => {
 
 app.get('/movies', (req, res) => {
   res.render('pages/movies', {
-      user
+      movies: movies
   })
 })
 
